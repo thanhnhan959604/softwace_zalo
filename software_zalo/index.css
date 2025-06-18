@@ -1,19 +1,30 @@
-header nav {
-    display: flex;
-    align-items: center;
-    height: 72px;
+.navbar-brand img {
+    height: 100px;
+    width: auto;
 }
 
-.flex.spage {
-    justify-content: space-between;
+.nav-link .active {
+    color: #007bff !important;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+.custom-blue-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
 }
 
-.flex.middle {
-    align-content: center;
+.custom-blue-button:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 8ox 20px;
+    border-radius: 5px;
 }
 
-.img {
-    max-width: 100%;
-    display: block;
-    overflow-clip-margin: content-box;
+.custom-blue-button:hover {
+    background-color: #0056b3;
+    
 }
