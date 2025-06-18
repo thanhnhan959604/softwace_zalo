@@ -1,0 +1,19 @@
+header nav {
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.flex.spage {
+    justify-content: space-between;
+}
+
+.flex.middle {
+    align-content: center;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+    overflow-clip-margin: content-box;
+}
