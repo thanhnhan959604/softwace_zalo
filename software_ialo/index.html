@@ -13,25 +13,24 @@
     
 </head>
 <body>
-        <div class="header">
-            <nav class="navbar navbar-expand-lg py-0 shadow-none border-0 bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/logo_image.png" alt="Logo_Zalo">
-                    </a>
+       <div class="header">
+        <nav class="navbar navbar-expand-lg py-0 shadow-none border-0 bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo_image.png" alt="Logo_Zalo">
+                </a>
 
-                    <!-- thay đổi collapseNavbar thành offcanvasNavbar -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="d-flex order-lg-last ms-auto">
+                    <button class="btn btn-primary rounded-2 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        Danh sách OA của tôi
                     </button>
+                </div>
 
-                    <div class="d-flex order-lg-last ms-auto">
-                            <button class="btn btn-primary rounded-2 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                                Toggle static offcanvas
-                            </button>
-                    </div>
-
-                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -39,66 +38,47 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                             <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            Trang chủ
-                        </a>
-                        
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sản phẩm
-                        </a>
+                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bolt" style="color: rgb(17, 17, 207);"></i> Tương tác</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear dropdown-icon" style="color: #8a2be2"></i> Quản lý</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-puzzle-piece dropdown-icon" style="color: #ffb800"></i> Mở rộng</a></li>
+                                </ul>
+                            </li>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Chính sách</a>
+                            </li>
 
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bảng giá</a>
+                            </li>
 
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Chính sách</a>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài nguyên</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i> Hướng dẫn vận hành</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> Thư viện</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-newspaper"></i></i> Tin tức</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-thumbs-up"></i> Tài nguyên</a></li>
+                                </ul>
+                            </li>
 
-                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Bản giá</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tài nguyên
-                        </a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Hỗ trợ</a>
-                        </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hỗ trợ</a>
+                            </li>
                         </ul>
                     </div>
-                    </div>
-
-                    
-                    
                 </div>
-                    
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
 
-       <section class="my-custom-section">
+    <section class="my-custom-section">
             <div class="container">
                 <div class="p-1 mb-1">
                     <h1 class="text-uppercase fw-bold fs-3">

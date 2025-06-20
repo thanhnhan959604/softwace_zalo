@@ -2,28 +2,30 @@
     width: 100%;
     padding: 5px 0;
     font-size: 10px;
+    margin: 0;
 }
 
 .navbar {
-    /* Đặt chiều cao tối thiểu cho navbar, làm cho nó nhỏ hơn */
+        /* Đặt chiều cao tối thiểu cho navbar, làm cho nó nhỏ hơn */
     min-height: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .navbar-brand img {
-    height: 5em;
-    width: auto; 
+    height: 2.5em;
+    width: auto;
     margin-right: 20px; /* Khoảng cách giữa logo và các mục điều hướng */
 }
 
 
 .navbar-nav .nav-item .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     /* Điều chỉnh padding để các mục gần nhau hơn hoặc có khoảng cách vừa phải */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 /* --- Nút bật/tắt (Toggler) trên màn hình nhỏ --- */
@@ -37,6 +39,27 @@
     /* Thêm margin-left auto để đẩy phần tử sang phải */
     margin-left: auto;
     margin-right: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #d8e8fa; /* Màu sắc khi hover */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    position: relative; /* Đảm bảo pseudo-element được định vị tương đối */
+    color: #007bff; /* Màu chữ xanh như hình, hoặc màu bạn muốn */
+    /* Có thể thêm font-weight: bold; nếu muốn chữ đậm hơn */
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+    content: ''; /* Bắt buộc phải có content để pseudo-element hiển thị */
+    position: absolute; /* Định vị tuyệt đối so với .nav-link.active */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Đặt ở dưới cùng của nav-link */
+    height: 3px; /* Chiều cao của gạch chân */
+    background-color: #007bff; /* Màu của gạch chân (màu xanh Bootstrap primary) */
+    border-radius: 2px; /* Bo tròn các góc của gạch chân, tùy chọn */
 }
 
 
@@ -66,6 +89,14 @@
         order: 3;
         margin-left: auto !important;
         margin-right: 0 !important;
+    }
+
+    .dropdown-menu {
+        /* Đảm bảo menu dropdown không bị che khuất */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
     }
 }
 
