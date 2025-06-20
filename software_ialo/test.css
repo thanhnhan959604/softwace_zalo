@@ -1,0 +1,39 @@
+/* Điều chỉnh vị trí của .inner nếu nó cần một chiều cao hoặc padding cụ thể */
+.inner {
+    min-height: 500px; /* Ví dụ: Đảm bảo có đủ không gian nếu nội dung bên trong rất nhỏ */
+    /* background-color: #f8f9fa; Thêm màu nền để dễ nhìn (gỡ bỏ khi hoàn tất) */
+}
+
+/* Các deco sẽ cần điều chỉnh bằng mắt để đúng vị trí trên ảnh sec_intro_2.png */
+.deco1 {
+    top: 10%; /* Điều chỉnh theo ý muốn */
+    left: 5%; /* Điều chỉnh theo ý muốn */
+    width: 30%; /* Điều chỉnh kích thước của deco */
+    z-index: 1; /* Đảm bảo deco nằm trên ảnh chính nếu cần */
+}
+
+.deco2 {
+    bottom: 15%; /* Điều chỉnh theo ý muốn */
+    right: 10%; /* Điều chỉnh theo ý muốn */
+    width: 40%;
+    z-index: 1;
+}
+
+.deco3 {
+    top: 5%; /* Điều chỉnh theo ý muốn */
+    right: 5%; /* Điều chỉnh theo ý muốn */
+    width: 25%;
+    z-index: 1;
+}
+
+/* Tùy chỉnh thêm cho khối animation nếu cần */
+.ani .item .box_wrap {
+    /* Đảm bảo chiều rộng cố định cho mỗi box nếu ảnh number và line có kích thước cụ thể */
+    width: 80px; /* Ví dụ */
+}
+
+/* Đảm bảo hình ảnh trong .number và .line vừa với box */
+.ani .item .box_wrap img {
+    max-width: 100%;
+    height: auto;
+}

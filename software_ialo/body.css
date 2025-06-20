@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.my-custom-section{
+  background-color: var(--bs-primary-bg-subtle) !important;
+
+}
+.container{
+       text-align: center;
+       padding-top: 10px ;
+}
+.my-fixed-column {
+    min-width: 300px; /* Đặt chiều rộng tối thiểu mà cột không được nhỏ hơn */
+    flex-shrink: 0;   /* Rất quan trọng: Ngăn cột co lại */
+    flex-grow: 0;     /* (Tùy chọn) Ngăn cột mở rộng để lấp đầy không gian trống */
+    flex-basis: auto; /* (Tùy chọn) Đặt kích thước cơ sở tự động */
+    padding: 15px;    /* Để nội dung có khoảng đệm */
+    border: 1px solid #ccc; /* Ví dụ để thấy rõ các cột */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng width */
+}
+.fixed-col-3{
+    position: relative;
+}
+.laptop-lg{
+    margin-top: 15px;
+    margin-right: 0 !important;
+    z-index: 0;
+    width: 195%;
+}
+.phone-lg-1{
+    position: absolute; /* Bắt buộc để có thể định vị tự do và lồi */
+    z-index: 1; /* Ảnh phone nằm trên */
+    width: 42vw;   /* Ví dụ: Chiều rộng của phone là 20% của chiều rộng viewport */
+    height: auto;  /* Tự động tính chiều cao để giữ tỷ lệ khung hình */
+    
+    /* Vị trí tương đối so với .fixed-col-3 và căn giữa */
+    /* Điều chỉnh top và left để di chuyển phone đến vị trí mong muốn (bên trái laptop) */
+    top: 70%; /* Dịch xuống dưới một chút so với giữa */
+    left: 15%; /* Dịch sang trái so với giữa (số nhỏ hơn 50%) */
+    transform: translate(-50%, -50%); /* Dịch chuyển để */
+}
+.phone-lg-2{
+    position: absolute;
+    width: 11vw;   /* Ví dụ: Chiều rộng của phone là 20% của chiều rộng viewport */
+    height: auto;  /* Tự động tính chiều cao để giữ tỷ lệ khung hình */
+    /* Vị trí tương đối so với .fixed-col-3 và căn giữa */
+    /* Điều chỉnh top và left để di chuyển phone đến vị trí mong muốn (bên trái laptop) */
+    top: 53%; /* Dịch xuống dưới một chút so với giữa */
+    left: 78%; /* Dịch sang trái so với giữa (số nhỏ hơn 50%) */
+    transform: translate(-50%, -50%); /* Dịch chuyển để */
+}
+
+
+
+

@@ -1,0 +1,48 @@
+/* CSS cho hiệu ứng di chuyển không đồng bộ và đều sang hai bên */
+@keyframes slideInOut {
+    0% { transform: translateX(-5vw); } /* Bắt đầu từ bên trái, dùng vw */
+    50% { transform: translateX(12vw); } /* Di chuyển sang phải, dùng vw */
+    100% { transform: translateX(-5vw); } /* Quay lại vị trí ban đầu (bên trái), dùng vw */
+}
+
+/* Lưu ý: Bạn đang sử dụng cùng một @keyframes cho tất cả các phần tử. */
+/* Để có hiệu ứng "không đồng bộ và đều sang hai bên" và "tốc độ khác", */
+/* bạn cần tạo các @keyframes riêng biệt hoặc điều chỉnh animation-duration, animation-delay, và animation-direction. */
+
+.feature-item:nth-child(1) .feature-circle {
+    animation: slideInOut 4s ease-in-out infinite; /* Biểu tượng 1: Di chuyển từ trái sang phải rồi về trái */
+}
+
+.feature-item:nth-child(2) .feature-circle {
+    /* Để có "tốc độ khác" và "di chuyển từ phải sang trái rồi về phải", bạn có thể đảo ngược animation-direction hoặc tạo keyframes riêng */
+    animation: slideInOut 3s ease-in-out infinite reverse; /* Biểu tượng 2: Đảo ngược chiều di chuyển */
+}
+
+.feature-item:nth-child(3) .feature-circle {
+    /* "Rất chậm" có thể là tăng thời gian animation, "ngược chiều mỗi lần lặp" là alternate */
+    animation: slideInOut 3.1s ease-in-out infinite alternate; /* Biểu tượng 3: Di chuyển chậm hơn và đảo chiều mỗi lần lặp */
+}
+
+.feature-circle {
+    width: 3vw; /* Sử dụng vw cho chiều rộng, sẽ co giãn theo viewport */
+    height: 3vw; /* Sử dụng vw cho chiều cao, giữ tỷ lệ với chiều rộng */
+    /* Hoặc dùng rem nếu bạn muốn nó scale theo font-size gốc: */
+    /* width: 4rem; */
+    /* height: 4rem; */
+
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Chỉnh shadow về rem/em nếu muốn tương đối */
+    flex-shrink: 0;
+}
+
+
+svg {
+    fill: #007bff; /* Màu mặc định cho icon */
+}
+.my-col-2{
+    margin-top: 50wh;
+}
