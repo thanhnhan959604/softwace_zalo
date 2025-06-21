@@ -1,0 +1,9 @@
+.footer{
+    margin-bottom: 0;
+}
+@media (max-width: 1000px) {
+    .img-footer {
+        height: 3em; 
+    }
+   
+}
