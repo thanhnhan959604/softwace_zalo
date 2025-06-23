@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.page-title {
+    color: #4a4a4a;
+}
+
+h1 {
+    background: -webkit-linear-gradient(45deg, #007bff, #ff8c00, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav .nav-pills .nav-link {
+    color: #4a4a4a;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-nav .nav-pills .nav-link.active,
+.sidebar-nav .nav-pills .show > .nav-link {
+    color: #0056b3; /* Màu chữ xanh đậm khi active */
+    background-color: transparent;
+    font-weight: 600;
+    border-left-color: #007bff; /* Viền xanh bên trái */
+}
+
+.sidebar-nav .nav-pills .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+/* Main Content Area */
+.main-content {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Table of Contents */
+.toc-nav {
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.toc-nav ol {
+    counter-reset: item; /* Reset the counter */
+    padding-left: 0;
+}
+
+.toc-nav li {
+    display: block;
+    margin-bottom: 0.75rem;
+    counter-increment: item; /* Increment the counter */
+}
+
+.toc-nav li a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.toc-nav li a:hover {
+    color: #0d6efd;
+}
+
+/* Add number before each list item */
+.toc-nav li a::before {
+    content: counter(item) ") ";
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+/* Custom Alert Box */
+.alert.alert-light {
+    background-color: #fef8e7; /* Màu nền vàng nhạt cho box lưu ý */
+}
+
+/* Sticky elements positioning */
+.sticky-top {
+    top: 20px; /* Thêm khoảng cách với top của viewport */
+}

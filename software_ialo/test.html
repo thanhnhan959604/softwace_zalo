@@ -3,57 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục Zalo - Laptop và Điện thoại</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./test.css"> 
+    <title>Hỗ trợ</title>
+    
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./header.css">
 </head>
 <body>
 
-    <div class="inner container-fluid"> <div class="row align-items-center justify-content-center"> <div class="col-12 col-lg-4 order-lg-1 d-flex justify-content-center align-items-center position-relative"> <img src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/sec_intro_2.png" class="img-fluid" alt="">
-            <div class="deco3 position-absolute"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/deco3.png" alt=""></div>
-            <div class="deco2 position-absolute"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/deco2.png" alt=""></div>
-            <div class="deco1 position-absolute"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/deco1.png" alt=""></div>
-        </div>
-
-        <div class="col-12 col-lg-4 order-lg-2 ani d-flex flex-column justify-content-center align-items-center py-4"> <div class="wrap d-flex justify-content-center align-items-center">
-                <div class="item text-center me-3"> <div class="box_wrap">
-                        <div class="box">
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                            <div class="line my-4"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/line.svg" alt=""></div>
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                        </div>
+    <div class="header">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid border-bottom">
+                <div class="row w-100 align-items-center">
+                    <div class="col-auto">
+                        <a class="navbar-brand py-0" href="#">
+                            <img src="../images/logo_image.png" class="img-logo" alt="logo ialo">
+                        </a>
                     </div>
-                    <div class="icon mt-2"> <img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/ani_call.svg" alt=""></div>
-                </div>
-                <div class="item text-center me-3">
-                    <div class="box_wrap">
-                        <div class="box">
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                            <div class="line my-4"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/line.svg" alt=""></div>
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                        </div>
+                    <div class="col">
+                        <p class="mb-0 fs-5 text-start text-md-start">Kênh hỗ trợ thông tin cho người dùng</p>
                     </div>
-                    <div class="icon mt-2"> <img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/ani_mess.svg" alt=""></div>
-                </div>
-                <div class="item text-center">
-                    <div class="box_wrap">
-                        <div class="box">
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                            <div class="line my-4"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/line.svg" alt=""></div>
-                            <div class="number"><img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/number.png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="icon mt-2"> <img class="w-100" src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/ani_img.svg" alt=""></div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-12 col-lg-4 order-lg-3 d-flex justify-content-center align-items-center"> <img src="https://stc-oa.zdn.vn/resources/zoa-landing/v122023/images/home/sec_intro_1.png" class="img-fluid" alt="">
-        </div>
-
+            <div class="container-fluid">
+                <ul class="navbar-nav flex-row justify-content-start pe-3 m-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/index.html">Trang chủ</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
     </div>
-</div>
+    
+    <div class="body"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <section>
+        <div class="container">
+            <form>
+                <h3 class="text-primary">Gửi yêu cầu hỗ trợ</h3>
+                
+                <div class="form-group row mt-3">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email nhận hỗ trợ<span style="color: red;">*</span></label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                </div>
+                
+                <div class="form-group row mt-3">
+                    <label for="editorContent" class="col-sm-2 col-form-label">Tiêu đề (Nội dung chi tiết)<span style="color: red;">*</span></label>
+                    <div class="col-sm-10">
+                        <textarea id="editorContent" class="form-control" rows="8" required></textarea> 
+                    </div>
+                </div>
+                
+                <div class="form-group row mt-3">
+                    <label for="inputSupport" class="col-sm-2 col-form-label">Dịch vụ cần trợ giúp<span style="color: red;">*</span></label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="inputSupport" aria-label="Default select example" required>
+                            <option selected disabled value="">Chọn dịch vụ...</option>
+                            <option value="ialoOA">ialo OA (ialo Official Account)</option>
+                            <option value="1">Hợp tác</option>
+                            <option value="2">Khác (mức độ ưu tiên thấp)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="ialoOAInputs" class="d-none"> 
+                    <div class="form-group row mt-3">
+                        <label for="oaBusinessName" class="col-sm-2 col-form-label">OA ID của bạn<span style="color: red;">*</span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="oaBusinessName" placeholder="Nhập ID của bạn">
+                        </div>
+                    </div>
+                    </div>
+                
+                <div id="dateAuthenticDiv" class="d-none"> 
+                    <div class="form-group row mt-3">
+                        <label for="dateAuthenticInput" class="col-sm-2 col-form-label">Chọn ngày xác thực tài khoản (nếu cần hỗ trợ kiểm duyệt)</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="dateAuthenticInput" required> 
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    First radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Second radio
+                                </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                <label class="form-check-label" for="gridRadios3">
+                                    Third disabled radio
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group row mt-3">
+                    <div class="col-sm-2">Checkbox</div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group row mt-3">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Gửi yêu cầu</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Khởi tạo Summernote trên textarea có id="editorContent"
+            $('#editorContent').summernote({
+                placeholder: 'Nhập nội dung chi tiết vào đây...',
+                tabsize: 2,
+                height: 200, // Chiều cao của trình soạn thảo
+                toolbar: [ // Các nút trên thanh công cụ
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link']],
+                    ['misc', ['undo', 'redo', 'fullscreen']]
+                ]
+            });
+
+            // Lấy các phần tử cần thiết bằng ID
+            const selectSupport = document.getElementById('inputSupport');
+            const ialoOAInputsDiv = document.getElementById('ialoOAInputs');
+            const dateAuthenticDiv = document.getElementById('dateAuthenticDiv'); // Đã đổi ID để khớp với HTML
+
+            const oaBusinessNameInput = document.getElementById('oaBusinessName');
+            const dateAuthenticInput = document.getElementById('dateAuthenticInput');
+
+            // Hàm để cập nhật trạng thái hiển thị của các input liên quan
+            function updateVisibility() {
+                if (selectSupport.value === 'ialoOA') {
+                    // Hiển thị khối các input OA
+                    ialoOAInputsDiv.classList.remove('d-none');
+                    oaBusinessNameInput.setAttribute('required', 'required');
+
+                    // Hiển thị khối date picker
+                    dateAuthenticDiv.classList.remove('d-none');
+                    dateAuthenticInput.setAttribute('required', 'required');
+                } else {
+                    // Ẩn khối các input OA
+                    ialoOAInputsDiv.classList.add('d-none');
+                    oaBusinessNameInput.removeAttribute('required');
+                    oaBusinessNameInput.value = ''; // Xóa giá trị khi ẩn
+
+                    // Ẩn khối date picker
+                    dateAuthenticDiv.classList.add('d-none');
+                    dateAuthenticInput.removeAttribute('required');
+                    dateAuthenticInput.value = ''; // Xóa giá trị khi ẩn
+                }
+            }
+
+            selectSupport.addEventListener('change', updateVisibility);
+            updateVisibility(); // Gọi hàm một lần khi trang tải để thiết lập trạng thái ban đầu
+        });
+    </script>
+    </body>
 </html>

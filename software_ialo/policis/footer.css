@@ -1,11 +1,12 @@
+/* Custom styles for the footer */
 .footer-custom {
-  background-color: #a6bcd3; /* Màu nền xám nhạt như trong hình */
-  color: #050a0f; /* Màu chữ xám mặc định */
+  background-color: #f8f9fa; /* Màu nền xám nhạt như trong hình */
+  color: #6c757d; /* Màu chữ xám mặc định */
   font-size: 0.9rem;
 }
 
 .footer-custom h5 {
-  color: #050a0f; /* Màu chữ đen cho tiêu đề */
+  color: #212529; /* Màu chữ đen cho tiêu đề */
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -30,7 +31,6 @@
   color: #0d6efd; /* Đổi màu xanh khi di chuột */
 }
 
-
 .footer-custom .contact-info p {
   margin-bottom: 0.5rem;
   line-height: 1.6;
@@ -38,9 +38,4 @@
 
 .footer-custom .copyright {
   margin-top: 2rem;
-}
-@media (max-width: 1000px) {
-  .img-footer {
-    height: 3em;
-  }
 }
