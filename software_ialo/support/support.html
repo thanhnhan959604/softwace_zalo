@@ -1,103 +1,112 @@
  <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hỗ trợ</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./header.css">
-</head>
-<body>
-
-    <div class="header">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid border-bottom">
-                <div class="row w-100 align-items-center"> <div class="col-auto"> <a class="navbar-brand py-0" href="#"> <img src="../images/logo_image.png" class="img-logo" alt="logo ialo">
-                        </a>
-                    </div>
-                    <div class="col"> <p class="mb-0 fs-5 text-start text-md-start" style="font-family: Georgia, 'Times New Roman', Times, serif; ">Kênh hỗ trợ thông tin cho người dùng</p> </div>
-                </div>
-            </div>
-            <div>
-                <ul class="navbar-nav justify-content-start flex-grow-1 m-2">
-                     <li class="nav-link">
-                        <a href="../index/index.html">Trang chủ</a>
-                     </li>
-                </ul>
-                </div> 
-            </div>
-        </nav>
-    </div>
-    <div class="body"></div>
-    <section>
-        <div class="container">
-            <form>
-                <h3 class="text-primary">Gửi yêu cầu hỗ trợ</h3>
-            <div class="form-group row mt-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email nhận hỗ trợ<span style="color: red;">*</span></label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" required>
-                </div>
-            </div>
-            <div class="form-group row mt-3">
-                <label for="inputTitle" class="col-sm-2 col-form-label">Tiêu đề<span style="color: red;">*</span></label>
-                <div class="col-sm-10">
-                <input type="title" class="form-control" id="inputTitle">
-                </div>
-            </div>
-            <div class="form-group row mt-3">
-                <label for="inputSupport" class="col-sm-2 col-form-label">Dịch vụ cần trợ giúp<span style="color: red;">*</span></label>
-                <div class="col-sm-10">
-                        <select class="form-select" id="inputSupport" aria-label="Default select example" required>
-                            <option selected disabled value="">Chọn dịch vụ...</option>
-                            <option value="ialoOA">ialo OA (ialo Official Account)</option>
-                            <option value="1">Hợp tác</option>
-                            <option value="2">Khác (mức độ ưu tiên thấp)</option>
-                        </select>
-                </div>
-            </div>
-
-                <div id="ialoOAInputs" class="d-none"> 
-                    <div class="form-group row mt-3">
-                        <label for="oaBusinessName" class="col-sm-2 col-form-label">OA ID của bạn<span style="color: red;">*</span></label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="oaBusinessName" placeholder="Nhập ID của bạn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hỗ trợ nhanh OA</title>
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./header.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid border-bottom">
+                    <div class="row w-100 align-items-center"> <div class="col-auto"> <a class="navbar-brand py-0" href="#"> <img src="../images/logo_image.png" class="img-logo" alt="logo ialo">
+                            </a>
                         </div>
+                        <div class="col"> <p class="mb-0 fs-5 text-start text-md-start" style="font-family: Georgia, 'Times New Roman', Times, serif; ">Kênh hỗ trợ thông tin cho người dùng</p> </div>
                     </div>
                 </div>
-                
-                <div id="dateAuthentic"class="d-none" > 
-                    <div class="form-group row mt-3">
-                        <label for="dateAuthenticInput" class="col-sm-2 col-form-label">Chọn ngày xác thực tài khoản (nếu cần hỗ trợ kiểm duyệt)</label>
-                            <div class="col-sm-10 mt-3">
-                                <input type="date" class="form-control" id="dateAuthenticInput" required> 
-                            </div>
-                    </div>
+                <div>
+                    <ul class="navbar-nav justify-content-start flex-grow-1 m-2">
+                        <li class="nav-link">
+                            <a href="../index/index.html">Trang chủ</a>
+                        </li>
+                    </ul>
+                    </div> 
                 </div>
+            </nav>
+        </div>
 
-            <div class="form-group row mt-3">
-                <label for="inputProblem" class="col-sm-2 col-form-label">Mô tả chi tiết vấn đề<span style="color: red;">*</span></label>
-                <div class="col-sm-10 mb-4">
-                <textarea class="form-control" id="inputProblem" rows="10"></textarea>
+        <div class="body"></div>
+            <section>
+                <div class="container">
+                    <form>
+                        <h3 class="text-primary">Gửi yêu cầu hỗ trợ</h3>
+                        <div class="form-group row mt-3">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email nhận hỗ trợ<span style="color: red;">*</span></label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Tiêu đề<span style="color: red;">*</span></label>
+                            <div class="col-sm-10">
+                                <input type="title" class="form-control" id="inputTitle">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <label for="inputSupport" class="col-sm-2 col-form-label">Dịch vụ cần trợ giúp<span style="color: red;">*</span></label>
+                            <div class="col-sm-10">
+                                <select class="form-select" id="inputSupport" aria-label="Default select example" required>
+                                    <option selected disabled value="">Chọn dịch vụ...</option>
+                                    <option value="ialoOA">ialo OA (ialo Official Account)</option>
+                                    <option value="1">Hợp tác</option>
+                                    <option value="2">Khác (mức độ ưu tiên thấp)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="ialoOAInputs" class="d-none"> 
+                            <div class="form-group row mt-3">
+                                <label for="oaBusinessName" class="col-sm-2 col-form-label">OA ID của bạn<span style="color: red;">*</span></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="oaBusinessName" placeholder="Nhập ID của bạn">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="dateAuthentic"class="d-none" > 
+                            <div class="form-group row mt-3">
+                                <label for="dateAuthenticInput" class="col-sm-2 col-form-label">
+                                    Chọn ngày xác thực tài khoản (nếu cần hỗ trợ kiểm duyệt)
+                                </label>
+                                <div class="col-sm-10 mt-3">
+                                    <input type="date" class="form-control" id="dateAuthenticInput" required> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <label for="inputProblem" class="col-sm-2 col-form-label">Mô tả chi tiết vấn đề<span style="color: red;">*</span></label>
+                            <div class="col-sm-10 mb-4">
+                                <textarea class="form-control" id="inputProblem" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <label class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10 mb-4 d-flex justify-content-end"> 
+                                <div class="g-recaptcha" data-sitekey="6LcMHGsrAAAAAG1FGZrdykG9plnd2k9gVsKf28Rb"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group row border-top mb-2">
+                            <div class="col-sm-12 text-end mt-2">
+                                <button type="submit" class="btn btn-primary">Gửi</button>
+                                <button type="submit" class="btn btn-light">Huỷ</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-           <div class="form-group row mt-3">
-                <label class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10 mb-4 d-flex justify-content-end"> <div class="g-recaptcha" data-sitekey="6LcMHGsrAAAAAG1FGZrdykG9plnd2k9gVsKf28Rb"></div>
-                </div>
-            </div>
-            
-            <div class="form-group row border-top mb-2">
-                <div class="col-sm-12 text-end mt-2">
-                <button type="submit" class="btn btn-primary">Gửi</button>
-                <button type="submit" class="btn btn-light">Huỷ</button>
-                </div>
-            </div>
-            </form>
-</div>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./script.js"></script>
+            </section>
+        </div>
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./script.js"></script>
 
     </body>
 </html>

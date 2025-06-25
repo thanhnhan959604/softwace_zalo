@@ -1,198 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảng giá</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bảng giá dịch vụ OA</title>
 
-        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="pricelist.css">
-        <link rel="stylesheet" href="footer.css">
-        
-</head>
-<body>
-    <div class="header">
-        <nav class="navbar navbar-expand-lg py-0 shadow-none border-0 bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../images/logo_image.png" alt="Logo_Zalo">
-                </a>
+            <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link rel="stylesheet" href="pricelist.css">
+            <link rel="stylesheet" href="footer.css">
+            <link rel="stylesheet" href="../index/header.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg py-0 shadow-none border-0 bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo_image.png" alt="Logo_Zalo">
+                    </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="d-flex order-lg-last ms-auto">
-                    <button class="btn btn-primary rounded-2 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        Danh sách OA của tôi
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                </div>
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="d-flex order-lg-last ms-auto">
+                        <button class="btn btn-primary rounded-2 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                            Danh sách OA của tôi
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index/index.html">Trang chủ</a>
-                            </li>
-                            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bolt" style="color: rgb(17, 17, 207);"></i> Tương tác</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear dropdown-icon" style="color: #8a2be2"></i> Quản lý</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-puzzle-piece dropdown-icon" style="color: #ffb800"></i> Mở rộng</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="../policis/policy.html">Chính sách</a>
-                            </li>
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index/index.html">Trang chủ</a>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Tương tác</a></li>
+                                        <li><a class="dropdown-item" href="#"> Quản lý</a></li>
+                                        <li><a class="dropdown-item" href="#"> Mở rộng</a></li>
+                                    </ul>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Bảng giá</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../policis/policy.html">Chính sách</a>
+                                </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài nguyên</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i> Hướng dẫn vận hành</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> Thư viện</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-newspaper"></i></i> Tin tức</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-thumbs-up"></i> Tài nguyên</a></li>
-                                </ul>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pricelist/pricelist.html">Bảng giá</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="../support/support.html">Hỗ trợ</a>
-                            </li>
-                        </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../library/library.html">Thư viện</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../support/support.html">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="fw-bold">BẢNG GIÁ DỊCH VỤ OA</h1>
-            <p class="text-primary fw-semibold">Dành cho OA đã xác thực</p>
+            </nav>
         </div>
 
-        <div class="d-flex justify-content-center mb-5">
-            <ul class="nav nav-pills" id="pricing-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">1 tháng</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">6 tháng</a>
-                </li>
-                <li class="nav-item position-relative">
-                    <a class="nav-link" href="#">1 năm</a>
-                    <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">TIẾT KIỆM 10%</span>
-                </li>
-            </ul>
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">BẢNG GIÁ DỊCH VỤ OA</h1>
+                <p class="text-primary fw-semibold">Dành cho OA đã xác thực</p>
+            </div>
+
+            <div class="d-flex justify-content-center mb-5">
+                <ul class="nav nav-pills" id="pricing-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">1 tháng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">6 tháng</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#">1 năm</a>
+                        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">TIẾT KIỆM 10%</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 rounded-4 border-2 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="text-center fw-bold">Nâng cao</h3>
+                            <div class="pricing text-center my-4">
+                                <span class="price-amount fw-bolder">99.000</span> <span class="price-currency">đ/tháng</span>
+                                <p class="text-muted small">(594.000đ/6 tháng)</p>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tương tác cơ bản và nâng cao</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có sẵn 2.000 tin tư vấn ngoài Khung</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Nhận 4 tin Truyền thông/tháng</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 5 tổng đài viên</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 15 lượt xuất bản nội dung</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có thể gia hạn và mua lại</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary btn-lg fw-semibold my-muangay">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 rounded-4 border-primary border-3 shadow-lg position-relative">
+                        <div class="badge bg-warning text-dark fw-bold position-absolute top-0 start-50 translate-middle p-2" style="z-index: 1;">Phổ biến nhất</div>
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="text-center fw-bold">Premium</h3>
+                            <div class="pricing text-center my-4">
+                                <span class="price-amount fw-bolder">399.000</span>
+                                <span class="price-currency">đ/tháng</span>
+                                <p class="text-muted small">(2.394.000đ/6 tháng)</p>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tương tác cơ bản và nâng cao</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có sẵn 9.000 tin Tư vấn ngoài Khung</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Nhận 4 tin Truyền thông/tháng</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 10 tổng đài viên</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 30 lượt xuất bản nội dung</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có thể gia hạn và mua lại</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Ưu tiên trải nghiệm tính năng mới</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a class="btn btn-warning btn-lg fw-semibold" href="#">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="row justify-content-center g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 rounded-4 border-2 shadow-sm">
-                    <div class="card-body p-4 p-md-5">
-                        <h3 class="text-center fw-bold">Nâng cao</h3>
-                        <div class="pricing text-center my-4">
-                            <span class="price-amount fw-bolder">99.000</span> <span class="price-currency">đ/tháng</span>
-                            <p class="text-muted small">(594.000đ/6 tháng)</p>
+        <div class="footer">
+            <footer class="footer-custom border-top py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <h3 class="logo-text">ialo <span class="fw-normal">Cloud</span></h3>
+                            <p class="pe-lg-4 mt-3">
+                                Thiết kế giải pháp kinh doanh vượt trội trong thời đại số với Ialo Cloud
+                            </p>
+                            <p class="copyright text-muted mt-5">© ialo 2023 ialo Cloud</p>
                         </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tương tác cơ bản và nâng cao</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có sẵn 2.000 tin tư vấn ngoài Khung</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Nhận 4 tin Truyền thông/tháng</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 5 tổng đài viên</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 15 lượt xuất bản nội dung</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có thể gia hạn và mua lại</li>
-                        </ul>
-                        <div class="d-grid">
-                            <a href="#" class="btn btn-primary btn-lg fw-semibold my-muangay">Mua ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 rounded-4 border-primary border-3 shadow-lg position-relative">
-                    <div class="badge bg-warning text-dark fw-bold position-absolute top-0 start-50 translate-middle p-2" style="z-index: 1;">Phổ biến nhất</div>
-                    <div class="card-body p-4 p-md-5">
-                        <h3 class="text-center fw-bold">Premium</h3>
-                        <div class="pricing text-center my-4">
-                            <span class="price-amount fw-bolder">399.000</span>
-                            <span class="price-currency">đ/tháng</span>
-                            <p class="text-muted small">(2.394.000đ/6 tháng)</p>
+                        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+                            <h5>Sản phẩm</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">ialo Artificial Intelligence</a></li>
+                                <li><a href="#">ialo Notification Service</a></li>
+                                <li class="active-link"><a href="#">ialo Official Account</a></li>
+                            </ul>
                         </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tương tác cơ bản và nâng cao</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có sẵn 9.000 tin Tư vấn ngoài Khung</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Nhận 4 tin Truyền thông/tháng</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 10 tổng đài viên</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 30 lượt xuất bản nội dung</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Có thể gia hạn và mua lại</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Ưu tiên trải nghiệm tính năng mới</li>
-                        </ul>
-                        <div class="d-grid">
-                            <a class="btn btn-warning btn-lg fw-semibold" href="#">Mua ngay</a>
+
+                        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+                            <h5>Tài nguyên</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Chính sách dịch vụ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12 mb-4 mb-lg-0 contact-info">
+                            <h5>Thông tin liên hệ</h5>
+                            <p class="mb-2">Hệ thống Web</p>
+                            <p>
+                            Địa chỉ: 256 Nguyễn Văn Cừ, Quận Ninh Kiều, Thành phố Cần Thơ
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
-    </div>
 
-    <div class="footer">
-        <footer class="footer-custom border-top py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <h3 class="logo-text">ialo <span class="fw-normal">Cloud</span></h3>
-                        <p class="pe-lg-4 mt-3">
-                            Thiết kế giải pháp kinh doanh vượt trội trong thời đại số với Ialo Cloud
-                        </p>
-                        <p class="copyright text-muted mt-5">© ialo 2023 ialo Cloud</p>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
-                        <h5>Sản phẩm</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">ialo Artificial Intelligence</a></li>
-                            <li><a href="#">ialo Notification Service</a></li>
-                            <li class="active-link"><a href="#">ialo Official Account</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
-                        <h5>Tài nguyên</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Chính sách dịch vụ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-12 mb-4 mb-lg-0 contact-info">
-                        <h5>Thông tin liên hệ</h5>
-                        <p class="mb-2">Hệ thống Web</p>
-                        <p>
-                           Địa chỉ: 256 Nguyễn Văn Cừ, Quận Ninh Kiều, Thành phố Cần Thơ
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+        
+        <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/bootstrap/jquery/jquery-3.7.1.slim.min.map"></script>
+    </body>
 </html>
